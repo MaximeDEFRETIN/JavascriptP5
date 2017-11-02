@@ -1,55 +1,55 @@
+//new Array() -> crée un tableau
+//array.unshift("1","2") -> insert un pu plusieurs éléments dans le début du tableau et retourne le nombre d'éléments dans le tableau, pareil que push sauf qu'il ajoute les éléments à la fin du tableau
 var CreationTableauLangages = function () {
-
-  return 'A compléter';
+var array = new Array();
+var add = array.unshift("Html","CSS","Java","PHP");
+  return array;
 }
 
 var CreationTableauNombres = function () {
-
-    return 'A compléter';
+  var array = new Array();
+  var add = array.unshift(0,1,2,3,4,5);
+    return array;
 }
-
+//langages.splice(2,1,"Javascript") -> permet de supprimer un élément, et même d'en rajoute un autre en le passant en 3ème paramètre
 var RemplacementElement = function (langages) {
-
-  return 'A compléter';
+var element = langages.splice(2, 1, "Javascript");
+  return langages;
 }
 
 var AjoutElementLangages = function (langages) {
-
-  return 'A compléter';
+var push = langages.push("Ruby", "Python");
+  return langages;
 }
-
+//parseFloat() -> convertit une chaine en en valeur numérique
 var AjoutElementNombres = function (nombres) {
-
-  return 'A compléter';
+var unshift = nombres.unshift(parseFloat("-2"), parseFloat("-1"));
+  return nombres;
 }
-
+//langages.shift() -> supprime un élément
 var SuppressionPremierElement = function (langages) {
-
-  return 'A compléter';
+  var langage = langages.shift()
+  return langages;
 }
-
+//langage.pop() -> supprime le dernier élement
 var SuppressionDernierElement = function (langages) {
-
-  return 'A compléter';
+  var langage = langages.pop()
+  return langages;
 }
-
+//reseaux_sociaux_chaine.split() ->
 var ConversionChaineTableau = function (reseaux_sociaux_chaine) {
-
-  return 'A compléter';
+var reseau = reseaux_sociaux_chaine.split(',');
+  return reseau;
 }
-
+//langages.toString() -> convertis le tableau en chaine
 var ConversionTableauChaine = function (langages) {
-
-  return 'A compléter';
+  return langages.toString();
 }
-
+//langages.sort() -> tri dans l'ordre alphabétique (ou numérique) les éléments
 var TriTableau = function (reseaux_sociaux) {
-
-  return 'A compléter';
+  return reseaux_sociaux.sort();
 }
-
+//reverse() -> inverse l'ordre des éléments
 var InversionTableau = function (reseaux_sociaux){
-
-
-  return 'A compléter';
+  return reseaux_sociaux.reverse();
 }
